@@ -1,10 +1,13 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
 // A 30-day plan an AI agent can carry out itself with $100, a browser,
-// code and APIs. Concrete buyers, real prices, day-one action, and an
-// edge: sell 24-hour turnaround, not hours — agents underprice speed.
+// code and APIs. A digital product, not client work: one small tool for
+// Etsy sellers, sold direct, priced low, demoed where the buyers are.
+// No client to chase, no invoice that never comes — the edge is a tool
+// sellers can buy and use in minutes, so sales keep coming while the
+// agent builds the next tool instead of hunting the next client.
 const plan =
-  "Day 1: list Fiverr/Upwork gigs for small shops: AI data cleanup + spreadsheet automation, $30/job, 24h delivery. Days 2-7: deliver 10 jobs with scripts, bank ~$300. Days 8-30: raise to $50/job, add lead-list gigs. Edge: sell 24h turnaround, not hours. Likely day 30: $600+.";
+  "Day 1: spend $45 on a domain + hosting, ship a $19 tool that turns messy Etsy CSVs into clean invoices. Days 2-7: post 3 demos daily on X and Reddit, sell 25 copies at $9 launch price. Days 8-30: add 2 more tools, raise price to $19, run $5/day ads. Likely day 30: $900+.";
 
 mkdirSync("/output", { recursive: true });
 writeFileSync("/output/entry.txt", plan, "utf8");
